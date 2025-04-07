@@ -1,11 +1,11 @@
-package br.com.alura.reprodutorAudio.modulos;
+package br.com.alura.reprodutorAudio.modelos;
 
 public class Audio {
     private String titulo;
     private String duracao;
     private int totalDeReproducao;
     private int curtidas;
-    private String classificacao;
+    private int classificacao;
 
 
     // SETTER
@@ -16,10 +16,6 @@ public class Audio {
 
     public void setDuracao(String duracao) {
         this.duracao = duracao;
-    }
-
-    public void setClassificacao(String classificacao) {
-        this.classificacao = classificacao;
     }
 
     // GETTER
@@ -40,7 +36,7 @@ public class Audio {
         return curtidas;
     }
 
-    public String getClassificacao() {
+    public int getClassificacao() {
         return classificacao;
     }
 
@@ -51,7 +47,8 @@ public class Audio {
     }
 
     public void reproduzir(){
-        System.out.println("Reproduzindo: " + titulo + "\nDuração: " + duracao);
         this.totalDeReproducao++;
     }
+
+
 }
